@@ -1,26 +1,18 @@
-<!--
-Список того, что обязательно должно быть на странице:
-11.	Два изображения (по желанию можно больше):
-•	Изображение-ссылка на внешний ресурс (добавить атрибуты width и height к изображению);
-•	Изображение-карта с тремя областями-ссылками (круг, прямоугольник, многоугольник).
-12.	Фавиконка.
- -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>LL School</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
 </head>
 <body>
 <!-- 1. Заголовки от уровня h1 до уровня h3 -->
     <h1 id="Page title">Language learning school</h1>
 <!-- 2. Тег pre -->
     <pre>
-        Twenty years from now you will be more
-        disappointed by the things that you
-        didn't do than by the ones you did do.
-        So throw off the bowlines. Catch the trade
-        winds in your sails. Explore. Dream. Discover.
+        Twenty years from now you will be more disappointed by the things
+        that you didn't do than by the ones you did do. So throw off the bowlines.
+        Catch the trade winds in your sails. Explore. Dream. Discover.
     </pre>
 <!-- 3. Тег b -->
     <b>Welcome!</b> You can find all the necessary information about our school on this page
@@ -68,6 +60,7 @@
     </ol>
     <div>
         For those who do not know or doubt:
+        <!-- Список терминов -->
         <dl>
             <dt>Respect</dt>
             <dd><i>verb</i> have due regard for (someone's feelings, wishes, or rights)</dd>
@@ -82,16 +75,24 @@
             <dt>Working independently</dt>
             <dd><i>verb</i> the ability to work self-sufficiently on assigned tasks</dd>
         </dl>
-
     </div>
     <p>Still not sure if it's worth studying with us? Read again in detail <a href="#Page title">all the information</a> about the school, or just <a href="#About us">the main reasons</a> to study with us.</p>
     <h2>Free resources</h2>
+<!-- Изображение с ссылкой и с картой -->
     <figure>
         <a href="https://online.fliphtml5.com/lhxm/ezwh/#p=1"><img src="BlueMurphy.jpg" alt="BlueMurphy" width="200" height="300"></a>
         <figcaption>Blue Murphy, 4th edition</figcaption>
     </figure>
-
-<footer>
+    <figure>
+    <img src="Figures.png" usemap="#figures" alt="Choose any figure">
+    <map name="figures">
+        <area shape="poly" coords="8,116,71,10,133,117" href="https://en.wikipedia.org/wiki/German_language" alt="Triangle">
+        <area shape="rect" coords="162,10,268,118" href="https://en.wikipedia.org/wiki/English_language" alt="Rectangle">
+        <area shape="circle" coords="355,65,55" href="https://en.wikipedia.org/wiki/French_language" alt="Circle">
+    </map>
+        <figcaption>Don't know which language to learn? Try your luck!</figcaption>
+    </figure>
+    <footer>
         <h4>Contact us</h4>
         <p><a href="tel:+79807135121">+79807135121</a></p>
         <p><a href="mailto:yuuonx@mail.ru">yuuonx@mail.ru</a></p>
