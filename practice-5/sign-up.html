@@ -1,0 +1,116 @@
+<!--
+4.	Встроить элемент <iframe> на страницу с медиа-элементом <video> внутри него. Для <video> использовать атрибуты:
+•	controls
+•	width
+•	height
+•	poster
+•	preload
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>LL School</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="logo.png" class="logo" width="100" height="100" alt="logo">
+    <h1 id="Page title">Language learning school</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">About us</a></li>
+            <li> |</li>
+            <li><a href="sign-up.html">Sign up</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Sign up</h2>
+        <div class="sign-up-page">
+            <form method="post" class="students-form">
+                <fieldset>
+                    <legend>For students</legend>
+                    <label for="name-form">Name:</label>
+                    <input type="text" id="name-form" placeholder="Ekaterina" required pattern="^[A-Za-zА-Яа-яЁё]+$">
+                    <p>
+                        <label for="tel-form">Phone number:</label>
+                        <input type="tel" id="tel-form" placeholder="+7(999)999-99-99" required>
+                    </p>
+                    <p>
+                        <label for="email-form">E-mail:</label>
+                        <input type="email" id="email-form" placeholder="student@gmail.com" required>
+                    </p>
+                    <p>
+                        <label for="date-form">Birthday:</label>
+                        <input type="datetime-local" id="date-form">
+                    </p>
+                    <p>
+                        <label for="pass-form-1">Password:</label>
+                        <input type="password" id="pass-form-1" required>
+                    </p>
+                    <p>
+                        <label>The language(s) you want to learn:
+                            <select multiple size="1" required>
+                                <option>English</option>
+                                <option>German</option>
+                                <option>French</option>
+                                <option>Spanish</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="secret-code">Secret code:</label>
+                        <input type="number" id="secret-code" min="10000" max="99999">
+                        <button>Get the code</button>
+                    </p>
+                    <p>
+                    <textarea cols="50" rows="10" maxlength="2000" minlength="100"
+                              placeholder="Tell us a little about yourself" required></textarea>
+                    </p>
+                    <input type="submit" value="Sign up">
+                </fieldset>
+            </form>
+        </div>
+        <div class="sign-up-page">
+            <form method="post" class="teachers-form">
+                <fieldset>
+                    <legend>For teachers</legend>
+                    <label for="CV-file">Attach your CV:</label>
+                    <input type="file" id="CV-file">
+                    <p>
+                        <label>
+                            Choose the suitable time for lessons:<br>
+                            <input type="checkbox" name="lessons-time-form">10:00-12:00<br>
+                            <input type="checkbox" name="lessons-time-form">12:30-14:30<br>
+                            <input type="checkbox" name="lessons-time-form">15:00-17:00<br>
+                            <input type="checkbox" name="lessons-time-form">17:30-19:30
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Choose the language you are going to teach:<br>
+                        </label>
+                            <input type="radio" name="language-form" checked>English<br>
+                            <input type="radio" name="language-form">German<br>
+                            <input type="radio" name="language-form">French<br>
+                            <input type="radio" name="language-form">Spanish
+                    </p>
+                    <input type="submit" value="Sign up">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <address>
+        <b>Contact us</b>
+        <p><a href="tel:+79807135121">+79807135121</a></p>
+        <p><a href="mailto:yuuonx@mail.ru">yuuonx@mail.ru</a></p>
+    </address>
+</footer>
+</body>
+</html>
