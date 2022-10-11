@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+header {
+    padding: 30px;
+    margin: 0 0 10px;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+main {
+    margin: 30px;
+}
+
+nav {
+    position: fixed;
+    top: 170px;
+}
+
+footer {
+    margin: 10px;
+}
+
+.logo {
+    float: left;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, serif;
+    font-size: 14pt;
+    background-color: rgb(222, 239, 255);
+    color: #0075aa;
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 40pt;
+    margin: 60px 0 100px 160px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+    color: #90191a;
+}
+
+h3 {
+    color: #252967;
+}
+
+nav li {
+    background-color: #99c7e7;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 30px;
+}
+
+nav a {
+    color: #8f191b;
+    text-decoration: none;
+}
+
+.welcome-quote {
+    font-size: 11pt;
+    color: #8f191b;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 1000px;
+    top: 300px;
+}
+
+a:visited {
+    color: #862d0c;
+}
+
+a:hover {
+    color: crimson;
+}
+
+p {
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+aside {
+    background: #ffffff;
+    padding: 10px;
+    width: 410px;
+    float: right;
+    position: relative;
+}
+
+map ~ figcaption {
+    font-size: 11pt;
+    color: #628093;
+}
+
+.rules-quote {
+    border: 5px double #ffffff;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+u > b {
+    color: #5c1f83;
+}
+
+.rules > li {
+    color: #844aa9;
+}
+
+dl dt {
+    color: #252967;
+}
+
+dd i {
+    color: #79c0ee;
+}
+
+section {
+    display: block;
+}
+
+article figure {
+    display: inline-block;
+}
+
+.words-descriptions dd {
+    display: list-item;
+    list-style: square;
+}
+
+

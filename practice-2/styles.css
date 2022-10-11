@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    margin: 30px;
+    font-family: Arial, serif;
+    font-size: 14pt;
+    background-color: rgb(222, 239, 255);
+    color: #0075aa;
+    line-height: 150%;
+}
+
+h1 {
+    margin: 0 0 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+    color: #90191a;
+}
+
+h3, nav a {
+    color: #252967;
+}
+
+.welcome-quote {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:visited {
+    color: #862d0c;
+}
+
+a:hover {
+    color: crimson;
+}
+
+a:active {
+    color: rebeccapurple;
+}
+
+p {
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+header {
+    padding: 30px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+}
+
+aside {
+    background: #ffffff;
+    padding: 10px;
+    width: 410px;
+}
+
+map ~ figcaption {
+    font-size: 11pt;
+    color: #628093;
+}
+
+.rules-quote {
+    border: 5px double #ffffff;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+u > b {
+    color: #5c1f83;
+}
+
+.rules > li {
+    color: #844aa9;
+}
+
+dl dt {
+    color: #252967;
+}
+
+dd i {
+    color: #79c0ee;
+}
