@@ -79,14 +79,6 @@ p {
     text-align: justify; /* Выравнивание по ширине */
 }
 
-aside {
-    background: #ffffff;
-    padding: 10px;
-    width: 410px;
-    float: right;
-    position: relative;
-}
-
 map ~ figcaption {
     font-size: 11pt;
     color: #628093;
@@ -113,14 +105,6 @@ dl dt {
 
 dd i {
     color: #79c0ee;
-}
-
-section {
-    display: block;
-}
-
-article figure {
-    display: inline-block;
 }
 
 .words-descriptions dd {
@@ -160,5 +144,15 @@ form label {
 fieldset {
     background-color: white;
 }
+
+
+aside {
+    background: #ffffff;
+    padding: 0 15px 0 15px;
+    display: inline-flex;
+    width: 400px;
+    float: right;
+}
+
 
 

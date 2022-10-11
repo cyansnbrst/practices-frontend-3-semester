@@ -6,8 +6,10 @@ header {
     margin: 0 0 10px;
     background-color: #FFFFFF;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
 }
 
 main {
@@ -16,10 +18,6 @@ main {
 
 footer {
     margin: 10px;
-}
-
-.logo {
-    float: left;
 }
 
 body {
@@ -32,8 +30,8 @@ body {
 }
 
 h1 {
+    padding-left: 10px;
     font-size: 24pt;
-    margin: 40px 0 20px 110px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -45,20 +43,35 @@ h3 {
     color: #252967;
 }
 
-nav {
+.default-menu {
+    flex-grow: 1;
     margin: 0;
 }
 
-nav li {
+.default-menu ul {
     color: #8f191b;
-    display: inline-block;
-    padding: 10px;
-    margin: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+}
+
+.default-menu li {
+    padding-left: 5%;
+}
+
+.burger-menu li {
+    list-style-type: none;
+    text-decoration: none;
 }
 
 nav a {
     color: #8f191b;
     text-decoration: none;
+}
+
+.burger-menu input, .burger-menu label, .burger-menu ul {
+    display: none;
 }
 
 .welcome-quote {
@@ -77,14 +90,6 @@ a:hover {
 
 p {
     text-align: justify; /* Выравнивание по ширине */
-}
-
-aside {
-    background: #ffffff;
-    padding: 10px;
-    width: 410px;
-    float: right;
-    position: relative;
 }
 
 map ~ figcaption {
@@ -113,14 +118,6 @@ dl dt {
 
 dd i {
     color: #79c0ee;
-}
-
-section {
-    display: block;
-}
-
-article figure {
-    display: flex;
 }
 
 .words-descriptions dd {
@@ -160,5 +157,93 @@ form label {
 fieldset {
     background-color: white;
 }
+
+.free-resources {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+aside {
+    background: #ffffff;
+    padding: 0 15px 0 15px;
+    display: inline-flex;
+    width: 400px;
+    float: right;
+}
+
+
+@media screen and (max-width: 768px) {
+    .default-menu {
+        visibility: hidden;
+    }
+
+    aside {
+        float: none;
+        width: auto;
+    }
+
+    .free-resources {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger-menu label {
+        font-weight: bolder;
+        margin-top: 5px;
+        color: #90191a;
+        display: block;
+        position: absolute;
+        right: 20px;
+        z-index: 100;
+    }
+
+    .burger-menu > label::before, .burger-menu > label::after {
+        display: block;
+        content: '——';
+    }
+
+    .burger-menu input:checked + label + ul {
+        opacity: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        background: white;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .burger-menu li {
+        text-align: center;
+        font-size: 30pt;
+    }
+
+    .burger-menu input:checked + label::after {
+        position: absolute;
+        top: 8px;
+        transform: rotate(45deg);
+        color: #90191a;
+    }
+
+    .burger-menu input:checked + label {
+        font-weight: bolder;
+        color: white;
+    }
+
+    .burger-menu input:checked + label::before {
+        position: absolute;
+        top: 8px;
+        transform: rotate(-45deg);
+        color: #90191a;
+    }
+
+
+}
+
 
 
