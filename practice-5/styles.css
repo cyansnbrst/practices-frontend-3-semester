@@ -174,6 +174,21 @@ aside {
     float: right;
 }
 
+.gallery {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    padding: 5px;
+    height: 280px;
+    width: auto;
+    flex-grow: 1;
+    border-radius: 3%;
+}
 
 @media screen and (max-width: 768px) {
     .default-menu {
@@ -239,6 +254,10 @@ aside {
         transform: rotate(90deg);
     }
 
+    .gallery img {
+        width: 100%;
+        flex-grow: 1;
+    }
 
 }
 
