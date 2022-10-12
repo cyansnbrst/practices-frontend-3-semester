@@ -89,7 +89,7 @@ a:hover {
 }
 
 p {
-    text-align: justify; /* Выравнивание по ширине */
+    text-align: justify;
 }
 
 map ~ figcaption {
@@ -191,18 +191,14 @@ aside {
     }
 
     .burger-menu label {
-        font-weight: bolder;
-        margin-top: 5px;
+        font-size: 36pt;
         color: #90191a;
         display: block;
-        position: absolute;
-        right: 20px;
-        z-index: 100;
     }
 
     .burger-menu > label::before, .burger-menu > label::after {
         display: block;
-        content: '——';
+        content: '—';
     }
 
     .burger-menu input:checked + label + ul {
@@ -224,22 +220,23 @@ aside {
     }
 
     .burger-menu input:checked + label::after {
-        position: absolute;
-        top: 8px;
-        transform: rotate(45deg);
-        color: #90191a;
+        display: none;
     }
 
     .burger-menu input:checked + label {
-        font-weight: bolder;
-        color: white;
+        z-index: 10;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        transform: rotate(45deg);
     }
 
     .burger-menu input:checked + label::before {
+        z-index: 10;
         position: absolute;
-        top: 8px;
-        transform: rotate(-45deg);
-        color: #90191a;
+        top: 4px;
+        left: 5px;
+        transform: rotate(90deg);
     }
 
 
