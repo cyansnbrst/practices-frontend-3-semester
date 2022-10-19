@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+header {
+    padding: 5px 20px 0 20px;
+    margin: 0 0 10px;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    margin: 30px;
+}
+
+footer {
+    margin: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, serif;
+    font-size: 14pt;
+    background-color: rgb(222, 239, 255);
+    color: #0075aa;
+    line-height: 150%;
+}
+
+h1 {
+    padding-left: 10px;
+    font-size: 24pt;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+    color: #90191a;
+}
+
+h3 {
+    color: #252967;
+}
+
+.default-menu {
+    flex-grow: 1;
+    margin: 0;
+}
+
+.default-menu ul {
+    color: #8f191b;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+}
+
+.default-menu li {
+    padding-left: 5%;
+}
+
+.burger-menu li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav a {
+    color: #8f191b;
+    text-decoration: none;
+}
+
+.burger-menu input, .burger-menu label, .burger-menu ul {
+    display: none;
+}
+
+.welcome-quote {
+    font-size: 11pt;
+    color: #8f191b;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:visited {
+    color: #862d0c;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+p {
+    text-align: justify;
+}
+
+map ~ figcaption {
+    font-size: 11pt;
+    color: #628093;
+}
+
+.rules-quote {
+    border: 5px double #ffffff;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+u > b {
+    color: #5c1f83;
+}
+
+.rules > li {
+    color: #844aa9;
+}
+
+dl dt {
+    color: #252967;
+}
+
+dd i {
+    color: #79c0ee;
+}
+
+.words-descriptions dd {
+    display: list-item;
+    list-style: square;
+}
+
+input::placeholder {
+    color: #b9c2d5;
+    padding-right: 3px;
+    text-align: right;
+}
+
+input:focus {
+    background: #f4f4ff;
+}
+
+.sign-up-page {
+    margin-right: 50px;
+    display: inline-grid;
+}
+
+form input {
+    margin-left: 3%;
+}
+
+form legend {
+    color: #8f191b;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+form label {
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: white;
+}
+
+.free-resources {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+aside {
+    background: #ffffff;
+    padding: 0 15px 0 15px;
+    display: inline-flex;
+    width: 400px;
+    float: right;
+}
+
+.gallery {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    padding: 5px;
+    height: 280px;
+    width: auto;
+    flex-grow: 1;
+    border-radius: 3%;
+}
+
+.button-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px;
+}
+
+.general-button {
+    position: relative;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 20px;
+}
+
+.join-button {
+    background-color: transparent;
+    color: #0075aa;
+    box-shadow: 10px 10px 15px #7095a4;
+}
+
+.join-button:hover {
+    background-color: #0074aa;
+    color: white;
+    box-shadow: none;
+}
+
+.teacher-button {
+    border-radius: 0 20px 0 20px;
+    background: white;
+}
+
+.teacher-button::before, .teacher-button::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    transition: all 0.5s;
+}
+
+.teacher-button::before {
+    bottom: -1px;
+    right: -1px;
+    border-top: 5px solid #0074aa;
+    border-left: 5px solid #0074aa;
+    transform: rotate(180deg);
+}
+
+.teacher-button::after {
+    top: -1px;
+    left: -1px;;
+    border-top: 5px solid #0074aa;
+    border-left: 5px solid #0074aa;
+}
+
+.teacher-button:hover {
+    border-radius: 0;
+}
+
+.teacher-button:hover::before, .teacher-button:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.info-button {
+    overflow: hidden;
+    border: 5px solid #0074aa;
+}
+
+.info-button:before, .info-button:after {
+    display: block;
+    content: '';
+    position: absolute;
+    background: #0074aa;
+    height: 100%;
+    width: 50%;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.info-button:before {
+    right: -90px;
+    bottom: 0;
+}
+
+.info-button:after {
+    top: 0;
+    left: -90px;
+}
+
+.info-button:hover {
+    color: white;
+}
+
+.info-button:hover::before {
+    transform: translateX(-90px);
+}
+
+.info-button:hover::after {
+    transform: translateX(90px);
+}
+
+.gallery-button {
+    background-color: white;
+    overflow: hidden;
+}
+
+.gallery-button::before, .gallery-button::after {
+    transition: all 0.5s;
+    position: absolute;
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #0074aa;
+    z-index: -1;
+}
+
+.gallery-button::before {
+    top: 0;
+    right: 0;
+}
+
+.gallery-button::after {
+    left: 0;
+}
+
+.gallery-button:hover {
+    color: white;
+    background: transparent;
+}
+
+.gallery-button:hover::before, .gallery-button:hover::after {
+    transform: scale(10, 10);
+}
+
+.notification {
+    content: '!';
+    right: 20px;
+    bottom: 20px;
+    color: #90191a;
+    text-align: center;
+    background: white;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    font-size: 50pt;
+    display: block;
+    position: fixed;
+    box-shadow: 4px 4px 10px;
+    transition: all 0.5s;
+    z-index: 100;
+}
+
+.notification-list {
+    padding-top: 30px;
+    display: none;
+    flex-direction: column;
+    font-size: 30pt;
+}
+
+.notification-list span {
+    transition: all 0.5s;
+    height: 2em;
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.notification:hover {
+    text-align: right;
+    border-radius: 10%;
+    width: 400px;
+    height: 430px;
+}
+
+.notification:hover .notification-list {
+    display: flex;
+}
+
+.notification-list span:hover {
+    transform: scale(1.25, 1.25);
+    border-radius: 20px;
+    color: white;
+    background: #90191a;
+}
+
+.choose-your-language {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.choose-your-language img {
+    width: 500px;
+}
+
+.choose-your-language div {
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.choose-your-language div::before {
+    visibility: hidden;
+    position: absolute;
+    opacity: 85%;
+    width: 50px;
+    height: 50px;
+    left: 250px;
+    top: 150px;
+    border-radius: 100%;
+    content: '';
+    background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+    transition: all 1s;
+}
+
+.choose-your-language div:hover::before {
+    visibility: visible;
+    transform: scale(20, 20);
+}
+
+.choose-your-language div:hover {
+    transform: translateY(-50px);
+}
+
+@media screen and (max-width: 768px) {
+    .default-menu {
+        visibility: hidden;
+    }
+
+    aside {
+        float: none;
+        width: auto;
+    }
+
+    .free-resources {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger-menu label {
+        font-size: 36pt;
+        color: #90191a;
+        display: block;
+    }
+
+    .burger-menu > label::before, .burger-menu > label::after {
+        display: block;
+        content: '—';
+    }
+
+    .burger-menu input:checked + label + ul {
+        opacity: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        background: white;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .burger-menu li {
+        text-align: center;
+        font-size: 30pt;
+    }
+
+    .burger-menu input:checked + label::after {
+        display: none;
+    }
+
+    .burger-menu input:checked + label {
+        z-index: 10;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        transform: rotate(45deg);
+    }
+
+    .burger-menu input:checked + label::before {
+        z-index: 10;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+        transform: rotate(90deg);
+    }
+
+    .gallery img {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .notification {
+        font-size: 35pt;
+        width: 20px;
+        height: 20px;
+    }
+
+    .notification-list {
+        font-size: 25pt;
+    }
+
+    .notification:hover {
+        height: 380px;
+        width: 320px;
+    }
+}
+
+
+
