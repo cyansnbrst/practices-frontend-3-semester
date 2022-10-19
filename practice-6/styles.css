@@ -75,7 +75,7 @@ nav a {
 }
 
 .welcome-quote {
-    font-size: 11pt;
+    font-size: 2vw;
     color: #8f191b;
     font-family: 'Roboto', sans-serif;
 }
@@ -270,20 +270,20 @@ aside {
     content: '';
     position: absolute;
     background: #0074aa;
-    height: 100%;
-    width: 50%;
+    height: 110%;
+    width: 52%;
     transition: all 0.5s;
     z-index: -1;
 }
 
 .info-button:before {
-    right: -90px;
-    bottom: 0;
+    right: -92px;
+    bottom: -2px;
 }
 
 .info-button:after {
-    top: 0;
-    left: -90px;
+    top: -2px;
+    left: -92px;
 }
 
 .info-button:hover {
@@ -341,8 +341,8 @@ aside {
     text-align: center;
     background: white;
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 2vw;
+    height: 1.6vw;
     padding: 30px;
     font-size: 50pt;
     display: block;
@@ -389,23 +389,23 @@ aside {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     grid-gap: 50px;
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
-.choose-your-language img {
+.country-card img {
     width: 500px;
 }
 
-.choose-your-language div {
+.country-card {
     position: relative;
     overflow: hidden;
     transition: all 1s;
 }
 
-.choose-your-language div::before {
+.country-card::before {
     visibility: hidden;
     position: absolute;
     opacity: 85%;
@@ -419,13 +419,77 @@ aside {
     transition: all 1s;
 }
 
-.choose-your-language div:hover::before {
+.country-card:hover::before {
     visibility: visible;
     transform: scale(20, 20);
 }
 
-.choose-your-language div:hover {
+.country-card:hover {
     transform: translateY(-50px);
+}
+
+.language-description {
+    opacity: 0;
+    position: absolute;
+    padding: 10px 20px 10px 20px;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    transition: all 1s;
+}
+
+.language-description h3 {
+    font-size: 20pt;
+    text-align: left;
+    color: #90191a;
+}
+
+.country-card:hover .language-description {
+    opacity: 100%;
+}
+
+.german-video {
+    position: relative;
+}
+
+.video-description {
+    opacity: 0;
+    position: absolute;
+    top: 65px;
+    left: 200px;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    font-size: 10pt;
+    transition: all 1s;
+    color: black;
+}
+
+.video-description h3 {
+    margin-bottom: -10px;
+}
+
+.german-video:hover .video-description {
+    opacity: 100%;
+}
+
+.german-video::before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    top: 70px;
+    left: 190px;
+    background: white;
+    transition: all 1s;
+}
+
+.german-video:hover::before {
+    opacity: 90%;
 }
 
 @media screen and (max-width: 768px) {
@@ -436,6 +500,10 @@ aside {
     aside {
         float: none;
         width: auto;
+    }
+
+    .rules-quote {
+        width: 100%;
     }
 
     .free-resources {
@@ -497,14 +565,17 @@ aside {
         flex-grow: 1;
     }
 
+    .free-resources img {
+        width: 300px;
+        height: auto;
+    }
+
     .button-container {
         flex-direction: column;
     }
 
     .notification {
-        font-size: 35pt;
-        width: 20px;
-        height: 20px;
+        font-size: 40pt;
     }
 
     .notification-list {
@@ -514,6 +585,20 @@ aside {
     .notification:hover {
         height: 380px;
         width: 320px;
+    }
+
+    .country-card img {
+        width: 100%;
+    }
+
+    .language-description {
+        font-size: 10pt;
+        margin: 2px;
+    }
+
+    .language-description h3 {
+        font-size: 14pt;
+        margin: 0;
     }
 }
 
