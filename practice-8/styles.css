@@ -3,7 +3,7 @@
 
 header {
     padding: 5px 20px 0 20px;
-    margin: 0 0 10px;
+    margin: 0 0;
     background-color: #FFFFFF;
     position: sticky;
     top: 0;
@@ -27,10 +27,10 @@ p {
 footer {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     background-color: #252967;
     padding: 80px;
-    grid-gap: 50px;
+    grid-gap: 0;
     color: #afafaf;
 }
 
@@ -146,6 +146,21 @@ section {
     padding-top: 30px;
 }
 
+
+.main-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    align-items: center;
+}
+
+.main-sections section {
+    margin: 60px;
+    padding: 60px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 15px #b9b9b9;
+    height: fit-content;
+}
+
 h1 {
     padding-left: 10px;
     font-size: 24pt;
@@ -157,6 +172,7 @@ h1, h2 {
 }
 
 h2 {
+    margin-top: 0;
     font-size: 50px;
     text-align: center;
 }
@@ -213,35 +229,6 @@ nav a:hover {
 map ~ figcaption {
     font-size: 11pt;
     color: #628093;
-}
-
-.rules-quote {
-    border: 5px double #ffffff;
-    width: 500px;
-    text-align: center;
-    align-self: center;
-    margin: auto;
-}
-
-u > b {
-    color: #5c1f83;
-}
-
-.rules > li {
-    color: #844aa9;
-}
-
-dl dt {
-    color: #252967;
-}
-
-dd i {
-    color: #79c0ee;
-}
-
-.words-descriptions dd {
-    display: list-item;
-    list-style: square;
 }
 
 .sign-up-forms {
@@ -889,7 +876,7 @@ aside {
 }
 
 .our-partners {
-    padding: 0 200px 100px 200px;
+    padding: 0 100px 100px 100px;
     position: relative;
     max-width: 100%;
     display: grid;
@@ -945,7 +932,7 @@ aside {
 
 @media screen and (max-width: 768px) {
     .default-menu {
-        visibility: hidden;
+        display: none;
     }
 
     aside {
@@ -953,9 +940,6 @@ aside {
         width: auto;
     }
 
-    .rules-quote {
-        width: 90%;
-    }
 
     .free-resources {
         flex-direction: column;
@@ -1010,8 +994,7 @@ aside {
     .burger-menu input:checked + label {
         z-index: 1;
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: 10px;
         transform: rotate(45deg);
         transition: all 1s;
     }
