@@ -1,0 +1,206 @@
+/*FONTS
+TITLES - HIND MADURAI
+QUOTES - CORMORANT
+GENERAL - HIND SILIGURI*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Hind+Madurai&family=Hind+Siliguri&display=swap');
+/* HEADER AND FOOTER*/
+
+body {
+    background-color: #F0F0F0;
+    margin: 0;
+    font-family: 'Hind Siliguti', sans-serif;
+}
+
+header {
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 0 2rem 0 10px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.main-logo a {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #111318;
+}
+
+h1 {
+    font-size: 30pt;
+    color: #FF740F;
+}
+
+.navigation-menu {
+    flex-grow: 1;
+}
+
+.navigation-menu ul {
+    font-size: 18pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    grid-gap: 2rem;
+}
+
+.navigation-menu li:hover {
+    text-decoration: underline;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 45px;
+    width: 45px;
+}
+
+.toggle-button .bar {
+    width: 45px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: #0A3357;
+    padding: 80px;
+    grid-gap: 0;
+    color: #F0F0F0;
+}
+
+/* ЧТОБЫ НЕ СЪЕЗЖАЛ ТЕКСТ В РАЗДЕЛЕ ЭБАУТ АС*/
+.about-us-footer div {
+    padding-right: 80px;
+}
+
+footer h4 {
+    position: relative;
+    font-size: 25pt;
+    transition: all 0.5s;
+    cursor: default;
+    overflow: hidden;
+    color: #A1BFC4;
+}
+
+footer h4::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    border-bottom: #A1BFC4 solid 3pt;
+    bottom: 0;
+    left: -60px;
+    transition: 0.5s;
+}
+
+footer h4:hover::after {
+    transform: translateX(60px);
+}
+
+.contact-us-footer address, .quick-links-footer {
+    font-style: normal;
+    font-size: 18pt;
+    padding-bottom: 20px;
+}
+
+.quick-links-footer ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.quick-links-footer li {
+    margin-bottom: 20px;
+}
+
+.contact-us-footer address a, .quick-links-footer li a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.contact-us-footer address a:hover, .quick-links-footer a:hover {
+    text-decoration: underline;
+}
+
+a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+}
+
+.social-medias {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+.social-media-icon {
+    cursor: pointer;
+}
+
+.social-media-icon img {
+    border-radius: 100%;
+    padding: 8px;
+    width: 35px;
+    background-color: #A1BFC4;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navigation-menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation-menu ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navigation-menu.active {
+        display: flex;
+    }
+
+    .toggle-button.active .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(28px);
+        transition: 0.5s;
+    }
+
+    .toggle-button.active .bar:nth-child(2) {
+        opacity: 0;
+        transform: rotate(-45deg);
+        transition: 0.5s;
+    }
+
+    .toggle-button.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-28px);
+        transition: 0.5s;
+    }
+}

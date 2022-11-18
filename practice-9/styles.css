@@ -220,9 +220,14 @@ nav a:hover {
 }
 
 .welcome-quote {
+    background-color: #8f191b;
+}
+
+.welcome-quote pre {
+    margin: 0;
     font-size: 2vw;
     line-height: normal;
-    color: #8f191b;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -792,7 +797,7 @@ aside {
     top: 140px;
     left: 30px;
     padding: 20px;
-    width: 300px;
+    width: 75%;
     background-color: white;
 }
 
@@ -1181,4 +1186,11 @@ aside {
     syntax: '<angle>';
     initial-value: 0deg;
     inherits: false;
+}
+
+
+#new-draw-heart{
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
 }

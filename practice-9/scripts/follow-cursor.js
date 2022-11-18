@@ -1,22 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
+const drawspan = document.getElementById("draw-heart")
+console.log(drawspan)
 
-    const followCursor = () => { // объявляем функцию followCursor
-        const el = document.querySelector('.follow-cursor') // ищем элемент, который будет следовать за курсором
+function draw(event) {
+    const newspan = drawspan.cloneNode();
+    newspan.id = "new-draw-heart"
+    newspan.style.top = event.pageY + "px";
+    newspan.style.left = event.pageX + "px";
 
-        window.addEventListener('mousemove', e => { // при движении курсора
-            const target = e.target // определяем, где находится курсор
-            if (!target) return
+    drawspan.parentElement.appendChild(newspan);
+}
 
-            if (target.closest('a')) { // если курсор наведён на ссылку
-                el.classList.add('follow-cursor_active') // элементу добавляем активный класс
-            } else { // иначе
-                el.classList.remove('follow-cursor_active') // удаляем активный класс
-            }
 
-            el.style.left = e.pageX + 'px' // задаём элементу позиционирование слева
-            el.style.top = e.pageY + 'px' // задаём элементу позиционирование сверху
-        })
+let flag = false;
+
+function HandleClick() {
+    console.log(flag);
+    if (!flag) {
+        document.addEventListener("mousemove", draw);
+    } else {
+        document.removeEventListener("mousemove", draw)
     }
-    followCursor() // вызываем функцию followCursor
+    flag = !flag
 
-})
+}//ОТСЛЕЖИВАЕТ НАЖАТИЕ
+
+
+drawspan.addEventListener("click", HandleClick);
