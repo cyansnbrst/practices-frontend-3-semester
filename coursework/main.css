@@ -189,7 +189,7 @@ a[href^="tel"]::before {
     }
 
     .toggle-button.active .bar:nth-child(1) {
-        transform: rotate(45deg) translateY(28px);
+        transform: translateY(20px) rotate(45deg);
         transition: 0.5s;
     }
 
@@ -200,7 +200,7 @@ a[href^="tel"]::before {
     }
 
     .toggle-button.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translateY(-28px);
+        transform: translateY(-20px) rotate(-45deg);
         transition: 0.5s;
     }
 }
