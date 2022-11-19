@@ -9,6 +9,27 @@ body {
     background-color: #F0F0F0;
     margin: 0;
     font-family: 'Hind Siliguti', sans-serif;
+    color: #2d2d2d;
+}
+
+section, h2 {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.contrast-purple {
+    color: #7f3f98;
+}
+
+.contrast-orange {
+    color: #FF740F;
+}
+
+.contrast-white {
+    color: #F0F0F0;
 }
 
 header {
@@ -39,6 +60,7 @@ header a {
 h1 {
     font-size: 30pt;
     color: #FF740F;
+    font-family: 'Hind Siliguti', sans-serif;
 }
 
 .navigation-menu {
@@ -82,8 +104,8 @@ footer {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    background-color: #0A3357;
-    padding: 80px;
+    background-color: #2d2d2d;
+    padding: 40px 80px;
     grid-gap: 0;
     color: #F0F0F0;
 }
@@ -99,14 +121,13 @@ footer h4 {
     transition: all 0.5s;
     cursor: default;
     overflow: hidden;
-    color: #A1BFC4;
 }
 
 footer h4::after {
     position: absolute;
     content: '';
     width: 60px;
-    border-bottom: #A1BFC4 solid 3pt;
+    border-bottom: #FF740F solid 3pt;
     bottom: 0;
     left: -60px;
     transition: 0.5s;
@@ -137,7 +158,7 @@ footer h4:hover::after {
 }
 
 .contact-us-footer address a:hover, .quick-links-footer a:hover {
-    text-decoration: underline;
+    color: #FF740F;
 }
 
 a[href^="mailto"]::before {
@@ -149,20 +170,43 @@ a[href^="tel"]::before {
 }
 
 .social-medias {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .social-media-icon {
+    position: relative;
+    margin: 0;
+    height: 52px;
+    width: 52px;
     cursor: pointer;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: #F0F0F0;
+}
+
+.social-media-icon::before {
+    content: '';
+    position: absolute;
+    bottom: -52px;
+    height: 100%;
+    width: 100%;
+    background-color: #FF740F;
+}
+
+.social-media-icon:hover::before {
+    transition: 0.5s;
+    transform: translateY(-52px);
+}
+
+.social-media-icon:hover img {
+    position: relative;
+    z-index: 1;
 }
 
 .social-media-icon img {
-    border-radius: 100%;
     padding: 8px;
     width: 35px;
-    background-color: #A1BFC4;
 }
 
 @media screen and (max-width: 768px) {
