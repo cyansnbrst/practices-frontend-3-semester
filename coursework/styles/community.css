@@ -1,0 +1,90 @@
+.events-question p {
+    text-align: justify;
+}
+
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-card {
+    display: flex;
+    transition: 0.8s;
+}
+
+.event-card figcaption {
+    padding: 30px;
+    background-color: #A1BFC4;
+}
+
+.event-card img {
+    object-fit: cover;
+    width: 30vw;
+}
+
+.event-card:hover {
+    transform: scale(1.1);
+}
+
+figcaption {
+    font-size: 2vw;
+}
+
+.event-card figcaption h3 {
+    color: #F0F0F0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.event-date {
+    font-size: 0.5em;
+}
+
+.read-more-button {
+    font-size: 2vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #F0F0F0;
+    color: #0A3357;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.read-more-button:hover {
+    background-color: #0A3357;
+    color: #F0F0F0;
+}
+
+@media screen and (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .event-card img {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+
+    .event-card figcaption p {
+        display: none;
+    }
+
+    .event-card figcaption {
+        font-size: 18pt;
+    }
+
+    .read-more-button {
+        font-size: 16pt;
+        padding: 10px;
+    }
+
+    .event-card figcaption h3 {
+        margin-bottom: 20px;
+    }
+}

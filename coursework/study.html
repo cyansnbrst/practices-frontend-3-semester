@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>LL School</title>
     <link rel="icon" href="content/logo.png" sizes="any">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/study.css">
 </head>
 <body>
 <header>
@@ -16,7 +17,7 @@
     </div>
     <nav class="navigation-menu">
         <ul>
-            <li><a href="study.html">Study</a></li>
+            <li><a href="study.html" class="contrast-orange">Study</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="teachers.html">Teachers</a></li>
             <li><a href="faq.html">FAQ</a></li>
@@ -29,6 +30,100 @@
     </a>
 </header>
 <main>
+    <section class="study-form">
+        <h2>Language Learning School <span class="contrast-purple">Premium</span></h2>
+        <h3>Language learning as what it should be</h3>
+        <div class="study-advantages">
+            <figure>
+                <img src="content/advantage1.png" alt="heart">
+                <figcaption>Best teachers</figcaption>
+            </figure>
+            <figure>
+                <img src="content/advantage2.png" alt="person">
+                <figcaption>Personal manager</figcaption>
+            </figure>
+            <figure>
+                <img src="content/advantage3.png" alt="notebook">
+                <figcaption>Individual plan</figcaption>
+            </figure>
+        </div>
+        <form method="post">
+            <div class="students-form">
+                <div>
+                    <input type="text" placeholder="Name" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+                </div>
+                <div>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="tel" placeholder="+7" required>
+                </div>
+                <div>
+                    <input class="students-submit" type="submit" value="Study with us">
+                </div>
+            </div>
+        </form>
+        <p>The manager will call you, tell you about the service and find out about your wishes for studying</p>
+    </section>
+    <section class="teachers-section">
+        <h2>Achieve goals with <span class="contrast-orange">empathetic teachers</span></h2>
+        <p>They additionally underwent special training and passed an internal exam to meet the high level of
+            service</p>
+        <div class="our-teachers">
+            <div class="teacher-card">
+                <img src="content/juan.jpg">
+                <div>
+                    <h3>Juan</h3>
+                    <ul>
+                        <li>Spanish teacher</li>
+                        <li>5 years of experience</li>
+                        <li>In the lessons, a professional scientific approach is combined with his life experience.
+                            This helps students achieve their goals
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <div>
+                    <h3>Arnold</h3>
+                    <ul>
+                        <li>German teacher</li>
+                        <li>5 years of experience</li>
+                        <li>In the lessons, a professional scientific approach is combined with his life experience.
+                            This helps students achieve their goals
+                        </li>
+                    </ul>
+                </div>
+                <img src="content/arnold.jpg">
+            </div>
+            <div class="teacher-card">
+                <img src="content/ekaterina.jpg">
+                <div>
+                    <h3>Ekaterina</h3>
+                    <ul>
+                        <li>Russian teacher</li>
+                        <li>5 years of experience</li>
+                        <li>In the lessons, a professional scientific approach is combined with his life experience.
+                            This helps students achieve their goals
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <div>
+                    <h3>Yoko</h3>
+                    <ul>
+                        <li>Japanese teacher</li>
+                        <li>5 years of experience</li>
+                        <li>In the lessons, a professional scientific approach is combined with his life experience.
+                            This helps students achieve their goals
+                        </li>
+                    </ul>
+                </div>
+                <img src="content/yoko.jpg">
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="about-us-footer">

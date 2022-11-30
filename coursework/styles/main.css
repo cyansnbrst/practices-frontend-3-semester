@@ -1,0 +1,261 @@
+/*FONTS
+TITLES - HIND MADURAI
+QUOTES - CORMORANT
+GENERAL - HIND SILIGURI*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Hind+Madurai&family=Hind+Siliguri&display=swap');
+/* HEADER AND FOOTER*/
+
+body {
+    background-color: #F0F0F0;
+    margin: 0;
+    font-family: 'Hind Siliguti', sans-serif;
+    color: #2d2d2d;
+    font-size: 20pt;
+}
+
+section, h2 {
+    margin: 0;
+}
+
+section {
+    padding: 2vh 10vw;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.contrast-purple {
+    color: #7f3f98;
+}
+
+.contrast-orange {
+    color: #FF740F;
+}
+
+.contrast-white {
+    color: #F0F0F0;
+}
+
+header {
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 0 2rem 0 10px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.main-logo a {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #111318;
+}
+
+h1 {
+    font-size: 30pt;
+    color: #FF740F;
+    font-family: 'Hind Siliguti', sans-serif;
+}
+
+.navigation-menu {
+    flex-grow: 1;
+}
+
+.navigation-menu ul {
+    font-size: 18pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    grid-gap: 2rem;
+}
+
+.navigation-menu li:hover {
+    text-decoration: underline;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 45px;
+    width: 45px;
+}
+
+.toggle-button .bar {
+    width: 45px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+footer {
+    position: relative;
+    font-size: 14pt;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: #2d2d2d;
+    padding: 40px 80px;
+    grid-gap: 0;
+    color: #F0F0F0;
+}
+
+/* ЧТОБЫ НЕ СЪЕЗЖАЛ ТЕКСТ В РАЗДЕЛЕ ЭБАУТ АС*/
+.about-us-footer div {
+    padding-right: 80px;
+}
+
+footer h4 {
+    position: relative;
+    font-size: 25pt;
+    transition: all 0.5s;
+    cursor: default;
+    overflow: hidden;
+}
+
+footer h4::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    border-bottom: #FF740F solid 3pt;
+    bottom: 0;
+    left: -60px;
+    transition: 0.5s;
+}
+
+footer h4:hover::after {
+    transform: translateX(60px);
+}
+
+.contact-us-footer address, .quick-links-footer {
+    font-style: normal;
+    font-size: 18pt;
+    padding-bottom: 20px;
+}
+
+.quick-links-footer ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.quick-links-footer li {
+    margin-bottom: 20px;
+}
+
+.contact-us-footer address a, .quick-links-footer li a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.contact-us-footer address a:hover, .quick-links-footer a:hover {
+    color: #FF740F;
+}
+
+a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+}
+
+.social-medias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-icon {
+    position: relative;
+    margin: 0;
+    height: 52px;
+    width: 52px;
+    cursor: pointer;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: #F0F0F0;
+}
+
+.social-media-icon::before {
+    content: '';
+    position: absolute;
+    bottom: -52px;
+    height: 100%;
+    width: 100%;
+    background-color: #FF740F;
+}
+
+.social-media-icon:hover::before {
+    transition: 0.5s;
+    transform: translateY(-52px);
+}
+
+.social-media-icon:hover img {
+    position: relative;
+    z-index: 1;
+}
+
+.social-media-icon img {
+    padding: 8px;
+    width: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navigation-menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation-menu ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navigation-menu.active {
+        display: flex;
+    }
+
+    .toggle-button.active .bar:nth-child(1) {
+        transform: translateY(20px) rotate(45deg);
+        transition: 0.5s;
+    }
+
+    .toggle-button.active .bar:nth-child(2) {
+        opacity: 0;
+        transform: rotate(-45deg);
+        transition: 0.5s;
+    }
+
+    .toggle-button.active .bar:nth-child(3) {
+        transform: translateY(-20px) rotate(-45deg);
+        transition: 0.5s;
+    }
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>LL School</title>
     <link rel="icon" href="content/logo.png" sizes="any">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/faq.css">
 </head>
 <body>
 <header>
@@ -19,7 +20,7 @@
             <li><a href="study.html">Study</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="teachers.html">Teachers</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html" class="contrast-orange">FAQ</a></li>
         </ul>
     </nav>
     <a href="#" class="toggle-button">
@@ -29,6 +30,92 @@
     </a>
 </header>
 <main>
+    <section class="faq-section">
+        <h2>Frequently asked questions</h2>
+        <div class="tabs">
+            <div class="tabs-links">
+                <div class="tabs-link is-active" data-tab-name="tab-1">Classes and courses</div>
+                <div class="tabs-link" data-tab-name="tab-2">Free resources</div>
+                <div class="tabs-link" data-tab-name="tab-3">Learning</div>
+            </div>
+            <div class="tabs-content">
+                <div class="tab tab-1 is-active">
+                    <div>
+                        <h3>Does the LLS offer self-study online courses?</h3>
+                        <p>Yes, we offer students a flexible, low-cost self-study course for you to learn language
+                            online for life and work. Study languages online in your own time and at your own speed</p>
+                    </div>
+                    <div>
+                        <h3>Does the LLS offer live online classes?</h3>
+                        <p>Yes, we offer students a flexible and totally customised online course, with a
+                            variety of classes and teachers to choose from. You can customise your study plan to suit
+                            your own preferences and study goals</p>
+                    </div>
+                    <div>
+                        <h3>Does the LLS offer personal online tutoring?</h3>
+                        <p>Yes, we offer students a personal tutoring service for one-to-one online language tuition
+                            with our approved tutors. Our highly qualified tutors will develop a study plan with you
+                            focused on achieving your goals</p>
+                    </div>
+                </div>
+                <div class="tab tab-2">
+                    <div>
+                        <h3>What learning resources are available and how do I use them?</h3>
+                        <p>Visit our main page to find out more about the resources and how to use them</p>
+                    </div>
+                    <div>
+                        <h3>Can I use LLS for free?</h3>
+                        <p>Yes, you can access some the resources for free. You can also register for a free account to
+                            join our community</p>
+                    </div>
+                    <div>
+                        <h3>How do I log in or register for an account?</h3>
+                        <p>Go to the log in page. You need your username or email address and your password. If you have
+                            forgotten your username or password then visit the reset your password page for help</p>
+                        <p>If you don't already have an account, set up your free account today and get started</p>
+                    </div>
+                </div>
+                <div class="tab tab-3">
+                    <div>
+                        <h3>How can I check my language level?</h3>
+                        <p>Our online level test will give you an approximate indication of your language proficiency
+                            level</p>
+                        <p>You can use the result to help you find free resources on our website that are appropriate
+                            for your language ability</p>
+                    </div>
+                    <div>
+                        <h3>How do I know what to study?</h3>
+                        <p>On LearnEnglish you choose what to study from our free resources. If you need help and
+                            support with your English studies we recommend our live online classes where our highly
+                            qualified and experienced British Council English teaching professionals can guide you. Our
+                            teachers are experienced in working with students from many different countries and are
+                            online teaching specialists</p>
+                    </div>
+                    <div>
+                        <h3>How can I improve my speaking and pronunciation?</h3>
+                        <p>On LLS you can watch our series of videos in our speaking skills section to practise
+                            your speaking skills. You can improve your speaking by noticing the language we use in
+                            different situations and practising useful phrases</p>
+                        <p>However, to really put your speaking into practice you need to speak to other learners and
+                            ideally to a teacher who can correct your mistakes and advise you on how to improve your
+                            speaking and pronunciation. Our live online classes offer exposure to different accents
+                            which is essential in a world where language is spoken by millions of people from different
+                            countries. We think this is the best way for our students to be better prepared to deal with
+                            real-life situations</p>
+                    </div>
+                    <div>
+                        <h3>How can I improve my writing?</h3>
+                        <p>On LLS you can find activities to practise your writing skills. You can improve your
+                            writing by understanding model texts and how they're structured. Join our online community
+                            and write comments and respond to other learners to put your knowledge into practice.
+                            Registering for an account is free. Set up your account today and get started</p>
+                        <p>If you need specialised help with your writing, you can book private online classes with our
+                            expert teachers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="about-us-footer">
@@ -44,8 +131,8 @@
         <h4>Quick Links</h4>
         <div>
             <ul>
-                <li><a href="index.html">Study</a></li>
-                <li><a href="study.html">Community</a></li>
+                <li><a href="study.html">Study</a></li>
+                <li><a href="community.html">Community</a></li>
                 <li><a href="teachers.html">Teachers</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
@@ -78,5 +165,6 @@
     </div>
 </footer>
 <script src='scripts/burger-menu.js'></script>
+<script src="scripts/tabs.js"></script>
 </body>
 </html>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>LL School</title>
     <link rel="icon" href="content/logo.png" sizes="any">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/teachers.css">
 </head>
 <body>
 <header>
@@ -18,7 +19,7 @@
         <ul>
             <li><a href="study.html">Study</a></li>
             <li><a href="community.html">Community</a></li>
-            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="teachers.html" class="contrast-orange">Teachers</a></li>
             <li><a href="faq.html">FAQ</a></li>
         </ul>
     </nav>
@@ -29,6 +30,58 @@
     </a>
 </header>
 <main>
+    <section class="welcome-teacher-block">
+        <h2>Students are waiting <span class="contrast-orange">for you</span> in LLS</h2>
+        <ul>
+            <li>Lessons from anywhere in the world</li>
+            <li>Customizable schedule</li>
+            <li>Regular payments</li>
+        </ul>
+    </section>
+    <section class="taught-languages">
+        <h2>It's convenient with us</h2>
+        <div class="teach-benefits">
+            <div>
+                <h3>Remote classes</h3>
+                <p>It is enough that you have a computer or laptop and a stable Internet connection</p>
+            </div>
+            <div>
+                <h3>Determine your workload</h3>
+                <p>Choose a comfortable schedule for yourself and combine teaching even with your main activity</p>
+            </div>
+            <div>
+                <h3>You will always have students</h3>
+                <p>There are already about 100,000 students in our database, and we fully undertake their search</p>
+            </div>
+        </div>
+    </section>
+    <section class="teacher-form">
+        <h2>This is a sign — try online teaching in LLS!</h2>
+        <p>Start teaching with comfort</p>
+        <form method="post">
+            <div>
+                <select class="teacher-input" required>
+                    <option disabled selected>Language</option>
+                    <option>Japanese</option>
+                    <option>German</option>
+                    <option>Russian</option>
+                    <option>Spanish</option>
+                </select>
+            </div>
+            <div>
+                <input class="teacher-input" type="text" placeholder="Name" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
+            </div>
+            <div>
+                <input class="teacher-input" type="text" placeholder="Last name" pattern="^[A-Za-zА-Яа-яЁё]+$">
+            </div>
+            <div>
+                <input class="teacher-input" type="email" placeholder="Email" required>
+            </div>
+            <div>
+                <input class="teacher-input" class="teacher-submit" type="submit" value="I want to teach">
+            </div>
+        </form>
+    </section>
 </main>
 <footer>
     <div class="about-us-footer">
@@ -44,8 +97,8 @@
         <h4>Quick Links</h4>
         <div>
             <ul>
-                <li><a href="index.html">Study</a></li>
-                <li><a href="study.html">Community</a></li>
+                <li><a href="study.html">Study</a></li>
+                <li><a href="community.html">Community</a></li>
                 <li><a href="teachers.html">Teachers</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>

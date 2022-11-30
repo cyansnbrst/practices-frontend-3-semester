@@ -1,0 +1,134 @@
+.study-advantages {
+    display: flex;
+    grid-gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.study-advantages figure {
+    display: flex;
+    align-items: center;
+    grid-gap: 25px;
+    width: 220px;
+    padding: 25px;
+    background-color: #2d2d2d;
+    border-radius: 30px;
+    color: #F0F0F0;
+    cursor: default;
+}
+
+.study-advantages img {
+    width: 50px;
+}
+
+.study-advantages figure:hover {
+    transition: 0.5s;
+    background-color: #7f3f98;
+}
+
+.study-form form {
+    padding-top: 40px;
+}
+
+.students-form {
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: #0A3357;
+    border-radius: 30px;
+}
+
+.students-form div:last-child {
+    grid-column: span 3;
+    cursor: pointer;
+}
+
+.students-form input {
+    width: calc(100% - 20px);
+    padding-left: 20px;
+    border: 20px none;
+    height: 50px;
+    font-size: 18pt;
+    border-radius: 30px;
+}
+
+.students-form div:last-child input {
+    font-size: 30pt;
+    width: 100%;
+    height: 80px;
+    background-color: #FF740F;
+    cursor: pointer;
+}
+
+.students-form div:last-child input:hover {
+    background-color: #d2610f;
+}
+
+.study-form p {
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+.our-teachers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 50px;
+}
+
+.our-teachers ul {
+    list-style: url("../content/list-style.png");
+}
+
+.teacher-card {
+    display: flex;
+    align-items: center;
+}
+
+.teacher-card div {
+    padding: 30px;
+    background-color: #FF740F;
+    height: fit-content;
+}
+
+.teacher-card div h3 {
+    color: #F0F0F0;
+    margin: 0;
+    font-size: 40pt;
+}
+
+.teacher-card img {
+    width: 300px;
+}
+
+.teachers-section {
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .students-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .students-form div:last-child {
+        grid-column: auto;
+        cursor: pointer;
+    }
+
+    .study-form p {
+        font-size: 12pt;
+        text-align: justify;
+    }
+
+    .teacher-card {
+        flex-direction: column;
+    }
+
+    .teacher-card img {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+}

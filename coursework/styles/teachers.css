@@ -1,0 +1,96 @@
+.welcome-teacher-block {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    background-image: url("../content/teacher.jpg");
+    font-size: 2rem;
+}
+
+.welcome-teacher-block h2 {
+    text-align: left;
+}
+
+.welcome-teacher-block ul {
+    list-style: url("../content/checkmark.png");
+}
+
+.teach-benefits {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.teach-benefits div {
+    max-width: 300px;
+}
+
+.teach-benefits p {
+    text-align: justify;
+}
+
+.teacher-form {
+    background-color: #FF740F;
+    color: #F0F0F0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.teacher-form form {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    width: fit-content;
+    padding: 30px;
+    background-color: rgba(240, 240, 240, 0.14);
+    border-radius: 30px;
+}
+
+.teacher-input {
+    border: none;
+    padding-left: 30px;
+    width: calc(100% - 30px);
+    height: 60px;
+    border-radius: 30px;
+    font-size: 30pt;
+}
+
+.teacher-form form div:first-child .teacher-input,
+.teacher-form form div:last-child .teacher-input {
+    width: 100%;
+}
+
+.teacher-form form div:last-child .teacher-input {
+    background-color: #7f3f98;
+    height: 80px;
+    padding-left: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.teacher-form form div:last-child .teacher-input:hover {
+    background-color: #6c3581;
+}
+
+.teacher-form::after {
+    content: url("../content/happy-teacher.png");
+    position: absolute;
+    bottom: -10px;
+    right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .teach-benefits {
+        flex-direction: column;
+    }
+
+    .teacher-form::after {
+        display: none;
+    }
+}
