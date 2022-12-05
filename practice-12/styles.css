@@ -1041,6 +1041,7 @@ aside {
 }
 
 .notif__inner {
+    position: relative;
     display: none;
     background-color: red;
     border-radius: 30px;
@@ -1049,8 +1050,47 @@ aside {
     font-size: 30pt;
 }
 
+.notif__item {
+    position: relative;
+}
+
 .notif__btn:hover ~ .notif__inner {
     display: block;
+}
+
+.notif__inner:hover {
+    display: block;
+}
+
+.links-block {
+    text-align: center;
+    font-size: 16pt;
+    line-height: 30px;
+}
+
+.create-list ul li{
+    text-align: center;
+    list-style: none;
+}
+
+.notif {
+    text-align: center;
+}
+
+.center-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area {
+    background-color: #2d2d2d;
+    width: 500px;
+    height: 300px;
+}
+
+.area img {
+    position: relative;
 }
 
 @media screen and (max-width: 768px) {

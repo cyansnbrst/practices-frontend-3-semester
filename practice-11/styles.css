@@ -1053,6 +1053,7 @@ aside {
     display: block;
 }
 
+
 @media screen and (max-width: 768px) {
     .default-menu {
         display: none;
